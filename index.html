@@ -1,59 +1,47 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Lesson 1.2 || Form</title>
-</head>
-<body>
-    <h1>Форма</h1>
-    
-    <!--1. - Имя
-    2. - Телефон
-    3. - Email
-    4. - Пароль
-    5. - Придумать вопросы для клиента и сделать возможность выбора только одного варианта
-    6. - Поле для ввода длинного текста или пожеланий клиента
-    7. - Кнопка отправить форму
-    8. - Кнопка сбросить форму-->
-    
-    
-    
-    <form action="signin" method="get" enctype="text/plain" target="_blank">
-        <fieldset>
-            <legend><strong>Ввод личных данных</strong></legend>
-            <p>
-                <label>Имя 
-                    <input type="text" name="name" placeholder="Иван"></input>
-                </label>
-            </p>
-            <p>
-                <label for="tel">Телефон</label>
-                <input type="tel" id="tel" name="tel" placeholder="+375 00 000 00 00">
-            </p>
-            <p>
-                <label for="email">Email</label>
-                <input type="email" id="email" name="email" placeholder="login@gmail.com">
-            </p>
-            <p>
-                <label for="password">Пароль</label>
-                <input type="password" id="password" name="password" placeholder="Пароль"></input>
-            </p>
-            <p>
-                <label>Семейное положение</label>
-                <label>
-                    <input type="radio" name="status" checked>Холост</label>
-                <label>
-                    <input type="radio" name="status">Женат</label>
-                <label>
-                    <input type="radio" name="status">Разведён</label>
-                <label>
-            </p>
-            <textarea name="user-text" id="user-text" cols="30" rows="10" placeholder="Пожелания"></textarea>
-            <p><input type="submit"> <input type="reset" value="Очистить"></p>
-        </fieldset>
-    </form>
-    
-    
-</body>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Lesson 1.2 || Form</title>
+    </head>
+    <body>
+        <h1>Форма отправки данных</h1>
+        <form action="signin" method="get" enctype="text/plain" target="_blank">
+            <fieldset>
+                <legend><strong>Ввод личных данных</strong></legend>
+                <p>
+                    <label>Имя 
+                        <input type="text" name="name" placeholder="Иван">
+                    </label>
+                </p>
+                <p>
+                    <label for="tel">Телефон</label>
+                    <input type="tel" id="tel" name="tel" placeholder="+375 00 000 00 00">
+                </p>
+                <p>
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" placeholder="login@gmail.com">
+                </p>
+                <p>
+                    <label for="password">Пароль</label>
+                    <input type="password" id="password" name="password" placeholder="Пароль">
+                </p>
+                <p>
+                    <label>Семейное положение</label>
+                    <label>
+                        <input type="radio" name="status" checked>Холост
+                    </label>
+                    <label>
+                        <input type="radio" name="status">Женат
+                    </label>
+                    <label>
+                        <input type="radio" name="status">Разведён
+                    </label>
+                </p>
+                <textarea name="user-text" id="user-text" cols="30" rows="10" placeholder="Пожелания"></textarea>
+                <p><input type="submit"> <input type="reset" value="Очистить"></p>
+            </fieldset>
+        </form>    
+    </body>
 </html>
